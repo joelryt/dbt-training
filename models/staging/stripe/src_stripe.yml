@@ -6,3 +6,4 @@ sources:
       database: raw
       tables:
         - name: payment
+          description: Raw payment data from Stripe app.
