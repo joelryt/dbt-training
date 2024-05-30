@@ -21,6 +21,10 @@ semantic_models:
         type: time
         type_params:
           time_granularity: day
+      - name: last_order_at
+        type: time
+        type_params:
+          time_granularity: day
     measures:
       - name: count_lifetime_orders
         description: Total count of orders per customer.

@@ -34,6 +34,13 @@ semantic_models:
           percentile: 0.99
           use_discrete_percentile: True
           use_approximate_percentile: False
+      - name: median_value
+        description: The median order value.
+        agg: median
+        expr: amount
+      - name: min_order_value
+        agg: min
+        expr: amount
 
 metrics: 
   # Simple type metrics
