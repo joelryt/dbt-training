@@ -1,0 +1,19 @@
+version: 2
+
+seeds:
+  - name: employees
+    config:
+      schema: custom_seed_schema
+    description: Employee reference data
+    columns:
+      - name: employee_id
+        description: Unique employee id
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: Employee email address
+      - name: customer_id
+        description: Employee's customer id
+        tests:
+          - unique
